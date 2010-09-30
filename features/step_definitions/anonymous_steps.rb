@@ -2,6 +2,17 @@ Given /^the following products exist:$/ do |table|
   table.hashes.each do |attrs|
     create_product(attrs)
   end
+
+  ProspectingSystem::Application.routes.draw do
+    resources :prospects
+
+    products = Product.all
+    products.each do |p|
+      unless p.price > 0
+        match '/' => 'prospects#new', :constraints => {:domain => p.domain}
+      end
+    end
+  end
 end
 
 Given /^the domain name for the prospecting system is "([^"]*)"$/ do |dom|
