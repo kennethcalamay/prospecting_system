@@ -16,6 +16,9 @@ require 'cucumber/web/tableish'
 require 'webrat'
 require 'webrat/core/matchers'
 
+require File.expand_path(File.dirname(__FILE__) + '../../../spec/fixjour_builders.rb')
+World(Fixjour)
+
 Webrat.configure do |config|
   config.mode = :rack
   config.open_error_files = false # Set to true if you want error pages to pop up in the browser

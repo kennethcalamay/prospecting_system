@@ -7,4 +7,5 @@ group :development, :test do
   gem 'rspec-rails', '>= 2.0.0.beta.22'
   gem 'cucumber-rails', '>= 0.3.2'
   gem 'webrat', '>= 0.7.2.beta.1'
+  gem 'fixjour'
 end
