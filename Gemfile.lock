@@ -40,6 +40,7 @@ GEM
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
     diff-lcs (1.1.2)
+    dynamic_form (1.1.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     fixjour (0.5.3)
@@ -105,6 +106,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber-rails (>= 0.3.2)
+  dynamic_form
   fixjour
   rails (= 3.0.0)
   rspec-rails (>= 2.0.0.beta.22)

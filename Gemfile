@@ -9,3 +9,5 @@ group :development, :test do
   gem 'webrat', '>= 0.7.2.beta.1'
   gem 'fixjour'
 end
+
+gem 'dynamic_form'
