@@ -1,4 +1,5 @@
 ProspectingSystem::Application.routes.draw do
+  resources :customers
   resources :prospects
 
   products = Product.all
