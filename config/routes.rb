@@ -1,4 +1,6 @@
 ProspectingSystem::Application.routes.draw do
+  get 'system/thank_you'
+
   resources :customers
   resources :prospects
 
