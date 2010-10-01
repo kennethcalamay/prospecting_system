@@ -1,3 +1,9 @@
-Firstname
-Email
-Phone
+<%= form_for(@prospect) do |f| %>
+  <%= f.label :firstname %>
+  <%= f.text_field :firstname %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+  <%= f.submit "Submit" %>
+<% end %>
