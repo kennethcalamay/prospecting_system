@@ -11,6 +11,8 @@ Given /^the following products exist:$/ do |table|
         match '/' => 'customers#index', :constraints => {:domain => p.domain}
       end
     end
+
+    root :to => 'system#index'
   end
 end
 

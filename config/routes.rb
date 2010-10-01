@@ -9,4 +9,6 @@ ProspectingSystem::Application.routes.draw do
       match '/' => 'customers#index', :constraints => {:domain => p.domain}
     end
   end
+
+  root :to => 'system#index'
 end
