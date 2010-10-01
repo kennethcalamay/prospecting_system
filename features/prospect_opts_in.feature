@@ -31,13 +31,13 @@ Feature: prospect opts in
 
     Scenarios: Invalid first names
       | firstname  | email        | phone       | notice                    |
-      | 007007     | e@mail.com   | 09278433149 | firstname is invalid      |
-      | ken007     | e@mail.com   | 09278433149 | firstname is invalid      |
-      | 007ken     | e@mail.com   | 09278433149 | firstname is invalid      |
-      |            | e@mail.com   | 09278433149 | firstname can't be blank  |
+      | 007007     | e@mail.com   | 09278433149 | Firstname is invalid      |
+      | ken007     | e@mail.com   | 09278433149 | Firstname is invalid      |
+      | 007ken     | e@mail.com   | 09278433149 | Firstname is invalid      |
+      |            | e@mail.com   | 09278433149 | Firstname can't be blank  |
 
     Scenarios: Invalid email addresses
       | firstname  | email        | phone       | notice                    |
-      | Kenneth    | 0k7@mail.com | 09278433149 | email is invalid          |
-      | Kenneth    | 007@mail.com | 09278433149 | email is invalid          |
-      | Kenneth    |              | 09278433149 | email can't be blank      |
+      | Kenneth    | 0k7@mail.com | 09278433149 | Email is invalid          |
+      | Kenneth    | 007@mail.com | 09278433149 | Email is invalid          |
+      | Kenneth    |              | 09278433149 | Email can't be blank      |
